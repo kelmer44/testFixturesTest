@@ -11,7 +11,7 @@ android {
 
     defaultConfig {
         applicationId = "com.example.testfixturestest"
-        minSdk = 24
+        minSdk = 26
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
@@ -42,7 +42,7 @@ android {
         compose = true
     }
     composeOptions {
-        kotlinCompilerExtensionVersion = "1.5.1"
+        kotlinCompilerExtensionVersion = "1.5.5"
     }
     packaging {
         resources {
@@ -56,8 +56,10 @@ dependencies {
     implementation(project(":consuminglib"))
     implementation(project(":jvmlib"))
     implementation(libs.androidx.core.ktx)
+    implementation(libs.androidx.hilt.compose)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.lifecycle.viewmodel.ktx)
+    implementation(libs.androidx.lifecycle.viewmodel.compose)
     implementation(libs.androidx.activity.compose)
     implementation(platform(libs.androidx.compose.bom))
     implementation(libs.androidx.ui)
@@ -73,6 +75,7 @@ dependencies {
     debugImplementation(libs.androidx.ui.test.manifest)
 
     implementation(libs.coil)
+    implementation(libs.coil.compose)
 
     implementation(libs.hilt.android)
     kapt(libs.hilt.android.compiler)
