@@ -13,6 +13,6 @@ import dagger.hilt.testing.TestInstallIn
 interface FakePersonModule {
     @Binds
     fun bindsPeopleService(
-        defaultPeopleService: FakePersonService
+        defaultPeopleService: FakePeopleService
     ): PeopleService
 }

@@ -4,7 +4,7 @@ import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flowOf
 import javax.inject.Inject
 
-class FakePersonService @Inject constructor() : PeopleService {
+class FakePeopleService @Inject constructor() : PeopleService {
     override fun getPeople(): Flow<List<Person>> {
         return flowOf(
             listOf(
