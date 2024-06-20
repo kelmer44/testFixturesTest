@@ -1,0 +1,4 @@
+package compose
+
+class PersonViewModel {
+}
