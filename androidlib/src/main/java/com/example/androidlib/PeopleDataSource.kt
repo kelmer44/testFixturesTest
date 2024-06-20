@@ -38,6 +38,6 @@ class PeopleDataSource @Inject constructor() {
 
 
     fun getRandomPeople(number: Int) = people
-//        .shuffled(random)
+        .shuffled(random)
         .take(min(number, people.size))
 }

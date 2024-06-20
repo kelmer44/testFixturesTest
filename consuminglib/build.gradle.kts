@@ -66,6 +66,7 @@ dependencies {
 
     androidTestImplementation(libs.androidx.espresso.core)
     androidTestImplementation(libs.hilt.android.testing)
+    androidTestImplementation(testFixtures(project(":androidlib")))
     kaptAndroidTest(libs.hilt.android.compiler)
 
     implementation(libs.coil)

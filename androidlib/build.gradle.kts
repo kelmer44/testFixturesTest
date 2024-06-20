@@ -46,7 +46,12 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
 
+    testFixturesImplementation(libs.hilt.android)
+    testFixturesImplementation(libs.hilt.android.testing)
+    kaptTestFixtures(libs.hilt.android.compiler)
+
     implementation(libs.hilt.android)
+
     kapt(libs.hilt.android.compiler)
 
     testFixturesImplementation(libs.androidx.core.ktx)

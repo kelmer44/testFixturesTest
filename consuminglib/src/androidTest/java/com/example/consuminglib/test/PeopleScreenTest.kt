@@ -35,7 +35,7 @@ class PeopleScreenTest {
 
         composeRule.onNodeWithTag("people_list")
             .onChildren().filterToOne(
-                hasText("Mike")
+                hasText("Pepe")
             ).assertIsDisplayed()
     }
 }
