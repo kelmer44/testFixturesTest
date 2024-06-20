@@ -10,7 +10,7 @@ import dagger.hilt.testing.TestInstallIn
     components = [SingletonComponent::class],
     replaces = [PeopleModule::class]
 )
-interface FakePersonModule {
+interface FakePeopleModule {
     @Binds
     fun bindsPeopleService(
         defaultPeopleService: FakePeopleService
