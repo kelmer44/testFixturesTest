@@ -37,5 +37,7 @@ class PeopleDataSource @Inject constructor() {
     }
 
 
-    fun getRandomPeople(number: Int) = people.shuffled(random).take(min(number, people.size))
+    fun getRandomPeople(number: Int) = people
+//        .shuffled(random)
+        .take(min(number, people.size))
 }
