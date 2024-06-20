@@ -1,0 +1,7 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <application android:name="dagger.hilt.android.testing.HiltTestApplication">
+        <activity android:name="com.example.consuminglib.test.HiltTestActivity" android:exported="true" />
+    </application>
+</manifest>

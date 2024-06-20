@@ -12,7 +12,8 @@ android {
     defaultConfig {
         minSdk = 26
 
-        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner = "com.example.consuminglib.test.CustomTestRunner"
+
         consumerProguardFiles("consumer-rules.pro")
         vectorDrawables {
             useSupportLibrary = true
@@ -59,8 +60,13 @@ dependencies {
     implementation(libs.androidx.material3)
     implementation(libs.androidx.ui.tooling.preview)
     testImplementation(libs.junit)
+
     androidTestImplementation(libs.androidx.junit)
+    androidTestImplementation(libs.compose.uiTestJunit4)
+
     androidTestImplementation(libs.androidx.espresso.core)
+    androidTestImplementation(libs.hilt.android.testing)
+    kaptAndroidTest(libs.hilt.android.compiler)
 
     implementation(libs.coil)
     implementation(libs.coil.compose)
