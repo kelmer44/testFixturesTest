@@ -1,5 +1,6 @@
 plugins {
-    id("kotlin-kapt")
+//    id("kotlin-kapt")
+    id("com.google.devtools.ksp")
     alias(libs.plugins.android.library)
     alias(libs.plugins.jetbrains.kotlin.android)
     alias(libs.plugins.hilt)
@@ -46,10 +47,9 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
     implementation(libs.hilt.android)
-    kapt(libs.hilt.android.compiler)
-
+    ksp(libs.hilt.android.compiler)
     testFixturesImplementation(libs.androidx.core.ktx)
     testFixturesImplementation(libs.hilt.android)
     testFixturesImplementation(libs.hilt.android.testing)
-    kaptTestFixtures(libs.hilt.android.compiler)
+    kspTestFixtures(libs.hilt.android.compiler)
 }
