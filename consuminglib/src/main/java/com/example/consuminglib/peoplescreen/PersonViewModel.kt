@@ -1,4 +1,4 @@
-package compose
+package com.example.consuminglib.peoplescreen
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope

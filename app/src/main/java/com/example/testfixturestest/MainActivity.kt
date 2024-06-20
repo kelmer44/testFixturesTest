@@ -13,7 +13,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.testfixturestest.ui.theme.TestFixturesTestTheme
-import compose.PeopleScreen
+import com.example.consuminglib.peoplescreen.PeopleScreen
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint

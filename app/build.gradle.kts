@@ -52,7 +52,6 @@ android {
 }
 
 dependencies {
-    implementation(project(":androidlib"))
     implementation(project(":consuminglib"))
     implementation(project(":jvmlib"))
     implementation(libs.androidx.core.ktx)
@@ -74,8 +73,6 @@ dependencies {
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
 
-    implementation(libs.coil)
-    implementation(libs.coil.compose)
 
     implementation(libs.hilt.android)
     kapt(libs.hilt.android.compiler)

@@ -1,4 +1,4 @@
-package compose
+package com.example.consuminglib.peoplescreen
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Column
@@ -21,7 +21,7 @@ import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import coil.compose.AsyncImage
 import com.example.androidlib.Person
-import com.example.testfixturestest.R
+import com.example.consuminglib.R
 
 @Composable
 fun PeopleScreen(
@@ -52,7 +52,7 @@ fun Person(p: Person) {
     ) {
         if (LocalInspectionMode.current) {
             Image(
-                painter = painterResource(id = R.drawable.ic_launcher_background),
+                painter = painterResource(id = R.drawable.baseline_person_4_24),
                 contentDescription = "image",
                 modifier = Modifier.size(64.dp)
             )
@@ -72,9 +72,7 @@ fun Person(p: Person) {
 
 @Preview
 @Composable
-fun previewPeople(
-
-) {
+fun previewPeople() {
     PeopleList(
         list = listOf(
             Person(1, "Thomas", "http://jpg", "my@emial.com"),
